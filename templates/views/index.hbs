@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="main-content">
+    {{>header}}
+    <p>Use this site to get your weather!</p>
+      <div class="credit">
+        <img class="oops" src="/img/map.png">
+          <p>Image by <a href="https://pixabay.com/users/mmi9-1424200/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1272165">mmi9</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1272165">Pixabay</a></p>
+      </div>
+    <form>
+      <input placeholder="Location">
+      <button>Search</button>
+    </form>
+
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+  </div>
+  {{>footer}}
+
+    <script src="/js/app.js">  </script>
+</body>
+
+</html>
